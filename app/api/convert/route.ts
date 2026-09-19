@@ -710,7 +710,7 @@ export async function POST(
         await pdfEtiquetas.save();
 
       return new Response(
-        pdfBytes,
+  Buffer.from(pdfBytes),
         {
           status: 200,
           headers: {
@@ -739,7 +739,7 @@ export async function POST(
         await pdfEtiquetas.save();
 
       return new Response(
-        pdfBytes,
+  Buffer.from(pdfBytes),
         {
           status: 200,
           headers: {
@@ -947,7 +947,7 @@ export async function POST(
         await pdfFinal.save();
 
       return new Response(
-        pdfBytes,
+  Buffer.from(pdfBytes),
         {
           status: 200,
           headers: {
@@ -1027,7 +1027,7 @@ export async function POST(
         await pdfFinal.save();
 
       return new Response(
-        pdfBytes,
+  Buffer.from(pdfBytes),
         {
           status: 200,
           headers: {
@@ -1081,7 +1081,7 @@ export async function POST(
       await pdfFinal.save();
 
     return new Response(
-      pdfBytes,
+  Buffer.from(pdfBytes),
       {
         status: 200,
         headers: {
